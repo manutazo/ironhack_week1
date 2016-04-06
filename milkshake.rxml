@@ -1,0 +1,26 @@
+class Milkshake
+	attr_accessor :ingredients
+	def initialize
+		@base_price = 3
+		@ingredients = [ ]
+	end
+
+	def add_ingredient(ingredient)
+		@ingredients.push(ingredient)
+
+	end
+
+end
+
+class Ingredient
+	def initialize(name, price)
+		@name = name
+		@price = price
+
+	end
+
+end
+
+banana = Ingredient.new("banana", 4)
+banana_milkshake = Milkshake.new
+banana_milkshake.add_ingredient(banana)
