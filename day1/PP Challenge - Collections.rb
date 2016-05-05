@@ -1,4 +1,4 @@
-class ProgrammingLanguage
+18class ProgrammingLanguage
   attr_accessor :name, :age, :type
   attr_reader :name, :age, :type
   def initialize(name, age, type)
